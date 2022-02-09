@@ -6,7 +6,6 @@ greencar_width=75;
 greencar_height=100;
 background_image = "parkingLot.jpg";
 greencar_image = "car2.png";
-
 //Set initial position for a car image.
 greencar_x=10;
 greencar_y=225;
@@ -28,7 +27,7 @@ function uploadBackground() {
 
 function uploadgreencar() {
 	//Define function ‘uploadgreencar’
-	ctx.drawImage(greencar_imgTag,grreencar_x,greencar_y,greencar_width,greencar_height);
+	ctx.drawImage(greencar_imgTag,greencar_x,greencar_y,greencar_width,greencar_height);
 }
 
 
@@ -88,7 +87,7 @@ function down()
 function left()
 {
 	//Define function to move the car left side
-	if(grreencar_x>=0){
+	if(greencar_x>=0){
 		greencar_x=greencar_x-10;
 		uploadBackground();
 		uploadgreencar();
